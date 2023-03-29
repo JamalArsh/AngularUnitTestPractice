@@ -1,0 +1,23 @@
+<p>a27 works!</p>
+<button id="button1" (click)="button1Click()" style="color: blue">
+  button 1
+</button>
+<br /><br />
+<button id="button2" (click)="button2Click()" style="color: blue">
+  button 2
+</button>
+<br /><br />
+<input
+  type="text"
+  id="textbox1"
+  placeholder="button1 on value change"
+  (input)="onChangeInput()"
+/>
+<br /><br />
+<input
+  type="text"
+  id="textbox2"
+  placeholder="capture the event of the input"
+  (input)="onChangeLabelInput($event)"
+/>
+<h3>{{ label }}</h3>
